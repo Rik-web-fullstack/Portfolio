@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rik Maity | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+</head>
+<body>
+  <header>
+    <nav class="container">
+      <h1 class="logo">Rik Maity</h1>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="container">
+      <h2>Hi, I'm <span class="highlight">Rik Maity</span></h2>
+      <h3><span id="typed"></span></h3>
+    </div>
+  </section>
+
+  <section id="about" class="container reveal">
+    <h2>About Me</h2>
+    <p>
+      Hi👋, I'm Rik Maity currently pursuing a B.Tech in Computer Science and Engineering with a specialization in Artificial Intelligence and Machine Learning🧑‍🎓.
+      I’m a passionate Web Developer 🚀with a strong interest in Machine Learning, Cybersecurity, and Ethical Hacking🔐. 
+      I love building clean, efficient web applications and constantly exploring how AI and secure systems can shape the future of tech🧑‍💻.
+      I’m particularly driven by the intersection of AI and cybersecurity—where intelligent systems meet secure design💡.
+      📩 Always open to exciting opportunities, collaborations, or just a good tech conversation.
+    </p>
+  </section>
+
+  <section id="skills" class="container reveal">
+    <h2>Skills</h2>
+    <ul class="skills">
+      <li>HTML</li>
+      <li>Tailwind CSS</li>
+      <li>Bootstrap</li>
+      <li>JavaScript</li>
+      <li>Node.js</li>
+      <li>Express</li>
+      <li>React</li>
+      <li>MongoDB</li>
+      <li>Android Development</li>
+    </ul>
+  </section>
+
+  <section id="projects" class="container reveal">
+    <h2>Projects</h2>
+    <p>Coming soon...</p>
+  </section>
+
+  <section id="contact" class="container reveal">
+    <h2>Contact</h2>
+    <p>Email me at: <a href="mailto:rikmaity522@gmail.com">rikmaity522@gmail.com</a></p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Rik Maity. All rights reserved.</p>
+  </footer>
+
+  <script>
+    const typed = new Typed("#typed", {
+      strings: ["Full Stack Developer", "AI/ML Enthusiast", "Cybersecurity Learner"],
+      typeSpeed: 50,
+      backSpeed: 30,
+      loop: true
+    });
+
+    ScrollReveal().reveal('.reveal', {
+      distance: '50px',
+      duration: 1000,
+      easing: 'ease-in-out',
+      origin: 'bottom',
+      interval: 100
+    });
+  </script>
+</body>
+</html>
